@@ -26,6 +26,13 @@ This example is a simple distributed app which consists of two microservices: on
 
 We need to add tracing to it which should work across API boundaries. This way we can track RPCs, check start\finish times and latency across spans inside a trace and so on. We will add span tags and logs which should help us when tracking issues.
 
+## Running this example
+
+Start with the Jaeger all-in-one container. Once you have it running, you can simply "go run" the formatter service.
+Then run "client" service with two parameters: first is data you want to format, second - it's type (JSON\XML).
+
+After you run the client a few times check out Jaeger UI to find your traces.
+
 # Note
 
 Please note that our main goal for the code in this example is to be "easy" and "followable". I tried to simplify it as much as possible, so it uses stdlib as much as possible. It is by no means a "clean" code and you can (and should!) do better in real world applications!
