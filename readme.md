@@ -29,7 +29,7 @@ We need to add tracing to it which should work across API boundaries. This way w
 ## Running this example
 
 Start with the Jaeger all-in-one container. Once you have it running, you can simply "go run" the formatter service.
-Then run "client" service with two parameters: first is data you want to format, second - it's type (JSON\XML).
+Then run the "client" service with two parameters: first is data you want to format, second - it's type (json\xml).
 
 After you run the client a few times check out Jaeger UI to find your traces.
 

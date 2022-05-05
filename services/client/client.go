@@ -38,7 +38,7 @@ func Init(service string) (opentracing.Tracer, io.Closer) {
 
 func main() {
 	if len(os.Args) != 3 {
-		panic("ERROR: Expecting one argument")
+		panic("ERROR: Expecting two arguments")
 	}
 
 	tracer, closer := Init("pretty-print")
