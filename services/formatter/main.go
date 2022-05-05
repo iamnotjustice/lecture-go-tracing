@@ -55,6 +55,7 @@ func main() {
 		formatted, err := formatData(toFormat, dt)
 		if err != nil {
 			w.WriteHeader(400)
+			w.Write([]byte(err.Error()))
 		}
 
 		span.LogFields(
